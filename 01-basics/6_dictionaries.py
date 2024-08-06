@@ -50,3 +50,7 @@ squared = {x:x*x for x in range(2,11)}
 squared.clear()
 # print(squared)
 
+my_keys = ["huzair","huzaifa","abdullah"]
+my_value = "boy"
+print(dict.fromkeys(my_value,my_keys))
+
