@@ -4,18 +4,18 @@ user_age = input("What's your age: ")
 day = input("What's the day: ")
 int_user_age = int(user_age)
 
-if int_user_age >= 18 and day == "wednesday":
+if int_user_age >= 18 and day == "Wednesday" or "wednesday":
         ticket_price = 10
         print(f"User Age: {int_user_age} Ticker Price: ${ticket_price}, Day: {day}")
 
-elif int_user_age >= 18 and day != "wednesday":
+elif int_user_age >= 18 and day != "Wednesday" or "wednesday":
         ticket_price = 12
         print(f"Ticket Price: ${ticket_price}, Day: {day}")
 
-elif int_user_age <18:
-    if day == "Wednesday" or "wednesday":
+elif int_user_age <18 and day == "Wednesday" or "wednesday":
         ticket_price = 6
-    else:
+        print(f"User Age: {int_user_age} Ticker Price: ${ticket_price}, Day: {day}")
+elif int_user_age <18 and day != "Wednesday" or "wednesday":
         ticket_price = 8
-    print(f"Ticket Price: ${ticket_price}, Day: {day}")
+        print(f"User Age: {int_user_age} Ticker Price: ${ticket_price}, Day: {day}")
     
